@@ -25,13 +25,13 @@ echo '<br>';
 fclose($arquivo);
 
 echo '<hr>';
-
+/*lendo o arquivo todo */
 $arquivo = fopen('teste.txt', 'r');
 while(!feof($arquivo)) {
     echo fgets($arquivo), '<br>';
 }
 fclose($arquivo);
-
+/* lendo caracter por caracter */
 echo '<hr>';
 $arquivo = fopen('teste.txt', 'r');
 while(!feof($arquivo)) {
@@ -41,7 +41,7 @@ echo '<br>';
 fclose($arquivo);
 
 echo '<hr>';
-
+/*lendo e escrevendo */
 $arquivo = fopen('teste.txt', 'r+');
 echo fgets($arquivo), '<br>';
 echo fgets($arquivo), '<br>';

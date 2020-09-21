@@ -4,7 +4,7 @@
 print_r($_FILES);
 
 if($_FILES && $_FILES['arquivo']) {
-    $pastaUpload = '/Users/leonardomleitao/Desktop/';
+    $pastaUpload = '/Users/demet/Desktop/';
     $nomeArquivo = $_FILES['arquivo']['name'];
     $arquivo = $pastaUpload . $nomeArquivo;
     $tmp = $_FILES['arquivo']['tmp_name'];
